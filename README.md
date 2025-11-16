@@ -1,115 +1,83 @@
-ASP.NET Core Web API – Routing Practice Project
+<div align="center">
+  <h1 style="margin-bottom: 0;">City–Places–Attractions API</h1>
+  <p style="font-size: 16px; color: #555;">
+    A clean, structured ASP.NET Core Web API demonstrating nested routing, DTO mapping, and REST best practices.
+  </p>
+</div>
 
-Project Overview
-This project demonstrates a well-structured ASP.NET Core Web API designed to practice and showcase routing, nested endpoint patterns, and clean DTO-based response handling.
-The API models a real-world hierarchy of Cities, Places, and Attractions and focuses on producing maintainable, scalable backend code suitable for enterprise applications.
+<br/>
 
-Key Features
-• Structured and readable controller architecture
-• RESTful endpoint design
-• Nested resources (Cities → Places → Attractions)
-• Route constraints for improved API reliability
-• Query-parameter filtering and resource selection
-• Clean DTO mapping for response consistency
-• In-memory seed data for easy testing and demonstration
-• Fully documented and easily extendable project structure
+<div style="display: flex; flex-direction: column; gap: 20px;">
 
-Project Structure
-CityGuideApi/
-Controllers/
-CitiesController.cs
-PlacesController.cs
-AttractionsController.cs
-Models/
-City.cs
-Place.cs
-Attraction.cs
-DTOs/
-CityBasicDto.cs
-CityDetailDto.cs
-CitySummaryDto.cs
-CityInfoDto.cs
-PlaceBasicDto.cs
-PlaceDetailDto.cs
-AttractionBasicDto.cs
-Data/
-CityData.cs
-Helpers/
-MappingExtensions.cs
-Program.cs
+  <h2 style="color: #333;">📌 Project Overview</h2>
+  <p style="line-height: 1.6; color: #444;">
+    This project showcases a multi-level routing structure (<strong>City → Place → Attraction</strong>) 
+    implemented in ASP.NET Core Web API.  
+    It focuses on clean architecture, DTO-driven responses, in-memory data handling, and route constraints.
+  </p>
 
-API Endpoints Overview
+  <h2 style="color: #333;">🚀 Features</h2>
+  <ul style="line-height: 1.8; color: #444;">
+    <li>RESTful API design</li>
+    <li>Nested routes with <code>cityId</code>, <code>placeId</code>, and <code>attractionId</code></li>
+    <li>DTO-based response shaping</li>
+    <li>Filtering endpoint (e.g., filter attractions by type)</li>
+    <li>In-memory seeded data</li>
+    <li>Swagger documentation enabled</li>
+  </ul>
 
-Cities
-GET /api/cities
-GET /api/cities/{id:int}
-GET /api/cities/search?name=value
-GET /api/cities/{id:int}/summary
-GET /api/cities/popular
-GET /api/cities/{name:alpha}/info
+  <h2 style="color: #333;">🛠 Tech Stack</h2>
+  <ul style="line-height: 1.8; color: #444;">
+    <li>ASP.NET Core Web API</li>
+    <li>C#</li>
+    <li>Swagger / Swashbuckle</li>
+  </ul>
 
-Places
-GET /api/cities/{cityId:int}/places
-GET /api/cities/{cityId:int}/places/{placeId:int}
-GET /api/cities/{cityId:int}/places/search?category=value
+  <h2 style="color: #333;">📁 Project Structure</h2>
+  <pre style="background: #f4f4f4; padding: 15px; border-radius: 8px;">
+/Controllers
+   CitiesController.cs
+/Models
+   City.cs
+   Place.cs
+   Attraction.cs
+/DTOs
+   CityBasicDto.cs
+   PlaceBasicDto.cs
+   AttractionBasicDto.cs
+/Data
+   CityData.cs
+  </pre>
 
-Attractions
-GET /api/cities/{cityId:int}/places/{placeId:int}/attractions
-GET /api/cities/{cityId:int}/places/{placeId:int}/attractions/{id:int}
-GET /api/cities/{cityId:int}/places/{placeId:int}/attractions/filter?type=value
+  <br/>
 
-Skills and Concepts Demonstrated
-• Enterprise-level API routing organization
-• Route constraints for improved error handling
-• Consistent DTO-based representation models
-• Nested resource navigation patterns
-• LINQ for resource filtering
-• Clean and maintainable backend development practices
+  <h2 style="color: #333;">🖼 Screenshots</h2>
 
-How to Run the Project
+  <ul style="line-height: 1.8; color: #444;">
+    <li><strong>Swagger UI — All Endpoints</strong></li>
+    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Swagger UI" width="100%" />
 
-1. Clone the repository
-   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+    <li><strong>Controller Folder Structure</strong></li>
+    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Controller Folder" width="100%" />
 
-2. Open the solution in Visual Studio 2022 or Rider
+    <li><strong>GET /api/cities Response</strong></li>
+    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Cities Response" width="100%" />
 
-3. Build and run the project
-   Use CTRL + F5 or run "dotnet run"
+    <li><strong>Nested Attraction Endpoint</strong></li>
+    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Attraction Endpoint" width="100%" />
 
-4. View the API through Swagger UI
-   Navigate to [https://localhost:{port}/swagger](https://localhost:{port}/swagger)
+    <li><strong>Your DTOs</strong></li>
+    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="DTOs" width="100%" />
+  </ul>
 
-Technologies Used
-• ASP.NET Core Web API
-• C#
-• .NET 7 or .NET 8
-• Swagger (OpenAPI)
-• Visual Studio 2022
+  <br/>
 
-Recommended Screenshots (Insert in your GitHub README)
+  <h2 style="color: #333;">📞 Contact</h2>
+  <p style="line-height: 1.6; color: #444;">
+    If you're a recruiter, engineer, or company looking for a backend developer focused on ASP.NET Core and clean API architecture, feel free to connect with me.
+  </p>
+  <p>
+    <a href="https://www.linkedin.com" target="_blank">📌 Connect on LinkedIn</a>
+  </p>
 
-Swagger UI – All Endpoints
-[https://github.com/user-attachments/assets/7f71b9a5-950d-4589-987f-3a243d50b760](https://github.com/user-attachments/assets/7f71b9a5-950d-4589-987f-3a243d50b760)
-
-Controllers Folder Structure
-[https://github.com/user-attachments/assets/4a085146-0301-4f70-9c28-3df797e565c0](https://github.com/user-attachments/assets/4a085146-0301-4f70-9c28-3df797e565c0)
-
-GET Cities Response Sample
-[https://github.com/user-attachments/assets/687e14d9-63d5-48eb-bd18-c48a239258dc](https://github.com/user-attachments/assets/687e14d9-63d5-48eb-bd18-c48a239258dc)
-
-Nested Attractions Endpoint
-[https://github.com/user-attachments/assets/c0ed7076-8f9f-41ef-9e38-30b708ba3d96](https://github.com/user-attachments/assets/c0ed7076-8f9f-41ef-9e38-30b708ba3d96)
-
-DTOs Overview
-[https://github.com/user-attachments/assets/06596808-98ce-48ea-94c9-91edfa28ea65](https://github.com/user-attachments/assets/06596808-98ce-48ea-94c9-91edfa28ea65)
-
-Why This Project Was Created
-This project was built to reinforce core backend engineering principles and to establish a strong foundation before transitioning into advanced topics such as EF Core, repository patterns, authentication, and production-grade API architecture.
-
-Planned Enhancements
-• Integration of EF Core
-• Implementation of Create, Update, and Delete operations
-• Addition of service and repository layers
-• JWT authentication
-• Pagination and sorting
-• Optional React-based frontend integration
+</div>
