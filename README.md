@@ -51,35 +51,43 @@
 
   <br/>
 
- <h2 style="color: #333;">🖼 Screenshots</h2>
-
-  <p style="color:#777;">Add your images by replacing the <em>src</em> URLs.</p>
+  <h2 style="color: #333;">🖼 Screenshots</h2>
 
   <div style="margin-bottom: 20px;">
     <strong>Swagger UI – All Endpoints</strong><br/>
-    <img src="" alt="Swagger Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+    <img src="https://github.com/user-attachments/assets/7f71b9a5-950d-4589-987f-3a243d50b760" 
+         alt="Swagger Screenshot" 
+         style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
   </div>
 
   <div style="margin-bottom: 20px;">
     <strong>Controller Folder Structure</strong><br/>
-    <img src="" alt="Controller Folder Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+    <img src="https://github.com/user-attachments/assets/4a085146-0301-4f70-9c28-3df797e565c0" 
+         alt="Controller Folder Screenshot" 
+         style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
   </div>
 
   <div style="margin-bottom: 20px;">
     <strong>GET /api/cities Response</strong><br/>
-    <img src="" alt="GET Cities Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+    <img src="https://github.com/user-attachments/assets/687e14d9-63d5-48eb-bd18-c48a239258dc" 
+         alt="GET Cities Screenshot" 
+         style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
   </div>
 
   <div style="margin-bottom: 20px;">
     <strong>Nested Attractions Endpoint</strong><br/>
-    <img src="" alt="Nested Attractions Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+    <img src="https://github.com/user-attachments/assets/c0ed7076-8f9f-41ef-9e38-30b708ba3d96" 
+         alt="Nested Attractions Screenshot" 
+         style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
   </div>
 
   <div style="margin-bottom: 20px;">
     <strong>DTOs Overview</strong><br/>
-    <img src="" alt="DTOs Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+    <img src="https://github.com/user-attachments/assets/06596808-98ce-48ea-94c9-91edfa28ea65" 
+         alt="DTOs Screenshot" 
+         style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
   </div>
-
+  
   <br/>
 
   <h2 style="color: #333;">📞 Contact</h2>
