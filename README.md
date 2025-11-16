@@ -74,7 +74,7 @@ How to Run the Project
 2. Open the solution in Visual Studio 2022 or Rider
 
 3. Build and run the project
-   Using CTRL + F5 or executing "dotnet run"
+   Use CTRL + F5 or run "dotnet run"
 
 4. View the API through Swagger UI
    Navigate to [https://localhost:{port}/swagger](https://localhost:{port}/swagger)
@@ -86,31 +86,25 @@ Technologies Used
 • Swagger (OpenAPI)
 • Visual Studio 2022
 
-Screenshots
-Below are recommended screenshots to include for a professional presentation:
+Recommended Screenshots (Insert in your GitHub README)
 
 Swagger UI – All Endpoints
-[Insert Image]
 [https://github.com/user-attachments/assets/7f71b9a5-950d-4589-987f-3a243d50b760](https://github.com/user-attachments/assets/7f71b9a5-950d-4589-987f-3a243d50b760)
 
 Controllers Folder Structure
-[Insert Image]
 [https://github.com/user-attachments/assets/4a085146-0301-4f70-9c28-3df797e565c0](https://github.com/user-attachments/assets/4a085146-0301-4f70-9c28-3df797e565c0)
 
 GET Cities Response Sample
-[Insert Image]
 [https://github.com/user-attachments/assets/687e14d9-63d5-48eb-bd18-c48a239258dc](https://github.com/user-attachments/assets/687e14d9-63d5-48eb-bd18-c48a239258dc)
 
 Nested Attractions Endpoint
-[Insert Image]
 [https://github.com/user-attachments/assets/c0ed7076-8f9f-41ef-9e38-30b708ba3d96](https://github.com/user-attachments/assets/c0ed7076-8f9f-41ef-9e38-30b708ba3d96)
 
 DTOs Overview
-[Insert Image]
 [https://github.com/user-attachments/assets/06596808-98ce-48ea-94c9-91edfa28ea65](https://github.com/user-attachments/assets/06596808-98ce-48ea-94c9-91edfa28ea65)
 
 Why This Project Was Created
-This project was developed to reinforce core backend engineering principles and to establish a strong foundation before transitioning into advanced topics such as EF Core, repository patterns, authentication, and production-grade API design.
+This project was built to reinforce core backend engineering principles and to establish a strong foundation before transitioning into advanced topics such as EF Core, repository patterns, authentication, and production-grade API architecture.
 
 Planned Enhancements
 • Integration of EF Core
