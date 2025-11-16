@@ -51,24 +51,34 @@
 
   <br/>
 
-  <h2 style="color: #333;">🖼 Screenshots</h2>
+ <h2 style="color: #333;">🖼 Screenshots</h2>
 
-  <ul style="line-height: 1.8; color: #444;">
-    <li><strong>Swagger UI — All Endpoints</strong></li>
-    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Swagger UI" width="100%" />
+  <p style="color:#777;">Add your images by replacing the <em>src</em> URLs.</p>
 
-    <li><strong>Controller Folder Structure</strong></li>
-    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Controller Folder" width="100%" />
+  <div style="margin-bottom: 20px;">
+    <strong>Swagger UI – All Endpoints</strong><br/>
+    <img src="" alt="Swagger Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+  </div>
 
-    <li><strong>GET /api/cities Response</strong></li>
-    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Cities Response" width="100%" />
+  <div style="margin-bottom: 20px;">
+    <strong>Controller Folder Structure</strong><br/>
+    <img src="" alt="Controller Folder Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+  </div>
 
-    <li><strong>Nested Attraction Endpoint</strong></li>
-    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Attraction Endpoint" width="100%" />
+  <div style="margin-bottom: 20px;">
+    <strong>GET /api/cities Response</strong><br/>
+    <img src="" alt="GET Cities Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+  </div>
 
-    <li><strong>Your DTOs</strong></li>
-    <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="DTOs" width="100%" />
-  </ul>
+  <div style="margin-bottom: 20px;">
+    <strong>Nested Attractions Endpoint</strong><br/>
+    <img src="" alt="Nested Attractions Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <strong>DTOs Overview</strong><br/>
+    <img src="" alt="DTOs Screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" />
+  </div>
 
   <br/>
 
