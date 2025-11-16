@@ -90,12 +90,24 @@
   
   <br/>
 
-  <h2 style="color: #333;">📞 Contact</h2>
-  <p style="line-height: 1.6; color: #444;">
-    If you're a recruiter, engineer, or company looking for a backend developer focused on ASP.NET Core and clean API architecture, feel free to connect with me.
-  </p>
-  <p>
-    <a href="https://www.linkedin.com" target="_blank">📌 Connect on LinkedIn</a>
-  </p>
+ <h2 style="color: #333;">📞 Contact</h2>
+
+<p style="line-height: 1.6; color: #444;">
+  If you're a recruiter or engineer looking for an ASP.NET Core backend developer 
+  with strong skills in routing, clean API architecture, and DTO-driven development, 
+  feel free to reach out.
+</p>
+
+<p style="line-height: 1.8; color: #444;">
+  📧 <strong>Email:</strong> 
+  <a href="mailto:devhamaad@gmail.com">devhamaad@gmail.com</a> <br/>
+  
+  💬 <strong>WhatsApp:</strong> 
+  <a href="https://wa.me/923071718709" target="_blank">0307-1718709</a> <br/>
+
+  🔗 <strong>LinkedIn:</strong> 
+  <a href="https://www.linkedin.com" target="_blank">Connect with me on LinkedIn</a>
+</p>
+
 
 </div>
