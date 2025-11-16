@@ -1,154 +1,121 @@
-╔══════════════════════════════════════════════════════════════════════╗
-║              ASP.NET CORE WEB API – ROUTING PRACTICE PROJECT         ║
-╚══════════════════════════════════════════════════════════════════════╝
+ASP.NET Core Web API – Routing Practice Project
 
+Project Overview
+This project demonstrates a well-structured ASP.NET Core Web API designed to practice and showcase routing, nested endpoint patterns, and clean DTO-based response handling.
+The API models a real-world hierarchy of Cities, Places, and Attractions and focuses on producing maintainable, scalable backend code suitable for enterprise applications.
 
-────────────────────────────────────────────────────────────────────────
-  OVERVIEW
-────────────────────────────────────────────────────────────────────────
-This ASP.NET Core Web API project was built to practice **Routing**,  
-**Route Constraints**, **Nested Endpoints**, and **DTO Mapping** using  
-realistic city → places → attractions data.
+Key Features
+• Structured and readable controller architecture
+• RESTful endpoint design
+• Nested resources (Cities → Places → Attractions)
+• Route constraints for improved API reliability
+• Query-parameter filtering and resource selection
+• Clean DTO mapping for response consistency
+• In-memory seed data for easy testing and demonstration
+• Fully documented and easily extendable project structure
 
-It is a read-only API using in-memory seed data to help understand  
-clean controller structure and endpoint design.
-
-
-────────────────────────────────────────────────────────────────────────
-  FEATURES
-────────────────────────────────────────────────────────────────────────
-• RESTful API with clean routing  
-• Nested endpoints (City → Places → Attractions)  
-• Route constraints (`int`, `alpha`, ranges, etc.)  
-• Query parameter filtering  
-• DTO-based responses  
-• In-memory data (no database required)  
-• Good for learning and portfolio projects  
-
-
-────────────────────────────────────────────────────────────────────────
-  PROJECT STRUCTURE
-────────────────────────────────────────────────────────────────────────
+Project Structure
 CityGuideApi/
-    Controllers/
-        CitiesController.cs
-        PlacesController.cs
-        AttractionsController.cs
-    Models/
-        City.cs
-        Place.cs
-        Attraction.cs
-    DTOs/
-        CityBasicDto.cs
-        CityDetailDto.cs
-        CityInfoDto.cs
-        CitySummaryDto.cs
-        PlaceBasicDto.cs
-        PlaceDetailDto.cs
-        AttractionBasicDto.cs
-    Data/
-        CityData.cs
-    Helpers/
-        MappingExtensions.cs
-    Program.cs
+Controllers/
+CitiesController.cs
+PlacesController.cs
+AttractionsController.cs
+Models/
+City.cs
+Place.cs
+Attraction.cs
+DTOs/
+CityBasicDto.cs
+CityDetailDto.cs
+CitySummaryDto.cs
+CityInfoDto.cs
+PlaceBasicDto.cs
+PlaceDetailDto.cs
+AttractionBasicDto.cs
+Data/
+CityData.cs
+Helpers/
+MappingExtensions.cs
+Program.cs
 
+API Endpoints Overview
 
-────────────────────────────────────────────────────────────────────────
-  ENDPOINTS OVERVIEW
-────────────────────────────────────────────────────────────────────────
+Cities
+GET /api/cities
+GET /api/cities/{id:int}
+GET /api/cities/search?name=value
+GET /api/cities/{id:int}/summary
+GET /api/cities/popular
+GET /api/cities/{name:alpha}/info
 
- **Cities**
-• GET /api/cities  
-• GET /api/cities/{id:int}  
-• GET /api/cities/search?name=Lahore  
-• GET /api/cities/{id:int}/summary  
-• GET /api/cities/popular  
-• GET /api/cities/{name:alpha}/info  
+Places
+GET /api/cities/{cityId:int}/places
+GET /api/cities/{cityId:int}/places/{placeId:int}
+GET /api/cities/{cityId:int}/places/search?category=value
 
- **Places**
-• GET /api/cities/{cityId:int}/places  
-• GET /api/cities/{cityId:int}/places/{placeId:int}  
-• GET /api/cities/{cityId:int}/places/search?category=museum  
+Attractions
+GET /api/cities/{cityId:int}/places/{placeId:int}/attractions
+GET /api/cities/{cityId:int}/places/{placeId:int}/attractions/{id:int}
+GET /api/cities/{cityId:int}/places/{placeId:int}/attractions/filter?type=value
 
- **Attractions**
-• GET /api/cities/{cityId:int}/places/{placeId:int}/attractions  
-• GET /api/cities/{cityId:int}/places/{placeId:int}/attractions/{id:int}  
-• GET /api/cities/{cityId:int}/places/{placeId:int}/attractions/filter?type=historic  
+Skills and Concepts Demonstrated
+• Enterprise-level API routing organization
+• Route constraints for improved error handling
+• Consistent DTO-based representation models
+• Nested resource navigation patterns
+• LINQ for resource filtering
+• Clean and maintainable backend development practices
 
+How to Run the Project
 
-────────────────────────────────────────────────────────────────────────
-  SKILLS & CONCEPTS PRACTICED
-────────────────────────────────────────────────────────────────────────
-• REST API design  
-• Routing in ASP.NET Core  
-• Route constraints  
-• DTO mapping  
-• Nested controller patterns  
-• LINQ queries  
-• Clean code structure  
+1. Clone the repository
+   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
 
+2. Open the solution in Visual Studio 2022 or Rider
 
-────────────────────────────────────────────────────────────────────────
-  HOW TO RUN THE PROJECT
-────────────────────────────────────────────────────────────────────────
-1. Clone the repository  
-       git clone https://github.com/yourusername/your-repo-name.git
+3. Build and run the project
+   Using CTRL + F5 or executing "dotnet run"
 
-2. Open the project in Visual Studio 2022 or Rider
+4. View the API through Swagger UI
+   Navigate to [https://localhost:{port}/swagger](https://localhost:{port}/swagger)
 
-3. Run the API  
-       Press CTRL + F5  
-   or  
-       dotnet run
+Technologies Used
+• ASP.NET Core Web API
+• C#
+• .NET 7 or .NET 8
+• Swagger (OpenAPI)
+• Visual Studio 2022
 
-4. Open Swagger UI  
-       https://localhost:{port}/swagger
+Screenshots
+Below are recommended screenshots to include for a professional presentation:
 
+Swagger UI – All Endpoints
+[Insert Image]
+[https://github.com/user-attachments/assets/7f71b9a5-950d-4589-987f-3a243d50b760](https://github.com/user-attachments/assets/7f71b9a5-950d-4589-987f-3a243d50b760)
 
-────────────────────────────────────────────────────────────────────────
-  TECHNOLOGIES USED
-────────────────────────────────────────────────────────────────────────
-• ASP.NET Core Web API  
-• C#  
-• .NET 7 / .NET 8  
-• Swagger (OpenAPI)  
-• VS 2022 
+Controllers Folder Structure
+[Insert Image]
+[https://github.com/user-attachments/assets/4a085146-0301-4f70-9c28-3df797e565c0](https://github.com/user-attachments/assets/4a085146-0301-4f70-9c28-3df797e565c0)
 
+GET Cities Response Sample
+[Insert Image]
+[https://github.com/user-attachments/assets/687e14d9-63d5-48eb-bd18-c48a239258dc](https://github.com/user-attachments/assets/687e14d9-63d5-48eb-bd18-c48a239258dc)
 
-────────────────────────────────────────────────────────────────────────
-SCREENSHOTS
-────────────────────────────────────────────────────────────────────────
-• Screenshot of Swagger UI showing all endpoints  
-![Screenshot of Swagger UI showing all endpoints](https://github.com/user-attachments/assets/7f71b9a5-950d-4589-987f-3a243d50b760)
-• Screenshot of controller folder structure
-![Screenshot of controller folder structure](https://github.com/user-attachments/assets/4a085146-0301-4f70-9c28-3df797e565c0)
-• Screenshot of GET cities response 
-![Screenshot of GET cities response ](https://github.com/user-attachments/assets/687e14d9-63d5-48eb-bd18-c48a239258dc)
-• Screenshot of nested attractions endpoint
-![Screenshot of nested attractions endpoint ](https://github.com/user-attachments/assets/c0ed7076-8f9f-41ef-9e38-30b708ba3d96)
-• Screenshot of DTOs
-![Screenshot of your DTOs](https://github.com/user-attachments/assets/06596808-98ce-48ea-94c9-91edfa28ea65)
+Nested Attractions Endpoint
+[Insert Image]
+[https://github.com/user-attachments/assets/c0ed7076-8f9f-41ef-9e38-30b708ba3d96](https://github.com/user-attachments/assets/c0ed7076-8f9f-41ef-9e38-30b708ba3d96)
 
-────────────────────────────────────────────────────────────────────────
-  WHY I BUILT THIS
-────────────────────────────────────────────────────────────────────────
-This project helped me practice real-world API design, routing patterns,  
-and controller organization. It strengthened my understanding of clean  
-backend architecture before moving into advanced topics like EF Core  
-and repositories.
+DTOs Overview
+[Insert Image]
+[https://github.com/user-attachments/assets/06596808-98ce-48ea-94c9-91edfa28ea65](https://github.com/user-attachments/assets/06596808-98ce-48ea-94c9-91edfa28ea65)
 
+Why This Project Was Created
+This project was developed to reinforce core backend engineering principles and to establish a strong foundation before transitioning into advanced topics such as EF Core, repository patterns, authentication, and production-grade API design.
 
-────────────────────────────────────────────────────────────────────────
-  FUTURE IMPROVEMENTS
-────────────────────────────────────────────────────────────────────────
-• Add EF Core  
-• Add Create / Update / Delete endpoints  
-• Add proper repository + service layers  
-• Add authentication (JWT)  
-• Add pagination and sorting  
-• Connect with React frontend  
-
-
-╔══════════════════════════════════════════════════════════════════════╗
-║                                END                                   ║
-╚══════════════════════════════════════════════════════════════════════╝
+Planned Enhancements
+• Integration of EF Core
+• Implementation of Create, Update, and Delete operations
+• Addition of service and repository layers
+• JWT authentication
+• Pagination and sorting
+• Optional React-based frontend integration
